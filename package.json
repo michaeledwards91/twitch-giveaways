@@ -17,5 +17,8 @@
     "streamqueue": "~0.1.1",
     "swig": "^1.4.1",
     "vinyl": "^0.3.0"
+  },
+  "dependencies": {
+    "mithril": "^1.1.1"
   }
 }

@@ -52,7 +52,7 @@ function view(ctrl) {
 	var i = 0;
 	return [
 		m('fieldset.sponsored-by', [ //JUST REMOVE THIS m ALIFOIAJFOAIFMOAICINAOFIAOIFJO
-			m('legend', 'Sponsored by DEEZ NUTS'), //remove DEEZ NUTS
+			m('legend', 'Sponsored by ASDFASDFASDFASDFASDFASDF'), //remove 
 			require('../component/sponsors').view(ctrl)
 		]),
 		m('.controls', [
