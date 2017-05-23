@@ -51,8 +51,8 @@ function Controller() {
 function view(ctrl) {
 	var i = 0;
 	return [
-		m('fieldset.sponsored-by', [
-			m('legend', 'Sponsored by'),
+		m('fieldset.sponsored-by', [ //JUST REMOVE THIS m ALIFOIAJFOAIFMOAICINAOFIAOIFJO
+			m('legend', 'Sponsored by DEEZ NUTS'), //remove DEEZ NUTS
 			require('../component/sponsors').view(ctrl)
 		]),
 		m('.controls', [

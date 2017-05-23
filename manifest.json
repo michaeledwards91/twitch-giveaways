@@ -1,6 +1,6 @@
 {
   "name": "Twitch Giveaways",
-  "description": "Comfortable giveaway system for Twitch.tv channels.",
+  "description": "Comfortable giveaway system for Twitch.tv channels. twitch-giveaways no ads",
   "version": "2.10.10",
   "manifest_version": 2,
   "icons": {
@@ -31,6 +31,6 @@
   "web_accessible_resources": [
     "main.html",
     "content-analytics.js",
-    "chat-listener.js"
+    ".chat-listener.js"
   ]
 }
