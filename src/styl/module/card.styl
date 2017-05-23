@@ -1,0 +1,149 @@
+.card
+	a
+		text-decoration: none
+
+	.lead
+		position: relative
+		margin: 1em 0
+		perspective: 800px
+
+		emblemSize = 80px
+		.emblem
+			position: relative
+			z-index: 1
+			display: flex
+			align-items: center
+			justify-content: center
+			size: emblemSize
+			margin: 0 auto
+			font-size: 30px
+			background-color: colors.lighter
+			background-size: cover
+			border-radius: 50%
+
+			img
+				size: emblemSize
+				border-radius: 50%
+
+		aside
+			position: absolute
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+
+			& > *
+				flex: 1
+
+			&.middle
+				top: 50%
+				transform: translateY(-50%)
+				& > :first-child
+					margin-right: 50px
+				& > :last-child
+					margin-left: 50px
+
+			&.lower
+				bottom: -5px
+				& > :first-child
+					margin-right: 25px
+				& > :last-child
+					margin-left: 25px
+
+		.meta
+			&:first-child
+				text-align: right
+			.status
+				margin: 0 5px
+
+		.action
+			position: relative
+			z-index: 3
+			display: flex
+			flex-flow: row nowrap
+			align-items: center
+			text-decoration: none
+			color: colors.light
+			overflow: hidden
+			cursor: pointer
+
+			&:hover
+				color: colors.primary
+
+			.Icon
+				position: relative
+				z-index: 4
+				display: flex
+				justify-content: center
+				align-items: center
+				size: 26px
+				background: colors.background
+				border: 2px solid colors.background
+				border-radius: 50%
+
+			.name
+				position: relative
+				z-index: 3
+
+			&.sliding .name
+				opacity: 0
+				transition: all 100ms ease-out
+
+			&:first-child
+				justify-content: flex-end
+				&.sliding .name
+					transform: translate(20px, 0)
+
+			&.sliding:last-child .name
+				transform: translate(-20px, 0)
+
+			&.sliding:hover .name
+				transform: translate(0, 0)
+				opacity: 1
+
+	.title
+		max-width: 80%
+		margin: 1.2em auto 1em
+		text-align: center
+		cursor: text
+
+		h1
+			display: block
+			width: 100%
+			font-size: 24px
+			overflow: ellipsis
+
+	.actions
+		display: flex
+		margin: .5em 0 .7em
+
+		a
+			flex: 1
+			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 30px
+			color: colors.light
+			font-size: 16px
+
+			&:hover
+				color: colors.success
+				// background: colors.success
+
+			&:last-child
+				border: 0
+
+			&:after
+				display: block
+				content: ''
+				absolute: top 35% right
+				height: 30%
+				border-right: 1px solid colors.lighter
+
+			&:last-child:after
+				display: none
+
+			.Icon
+				margin-right: 10px
+				font-size: 22px

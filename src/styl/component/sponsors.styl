@@ -1,0 +1,46 @@
+.sponsors
+	display: flex
+	flex-flow: row nowrap
+
+	a
+		display: flex
+		justify-content: center
+		align-items: center
+		flex: 1 1 0
+		height: 60px
+		margin: 0
+		padding: 0
+		font-size: 12px
+		line-height: 14px
+		text-align: center
+		text-decoration: none
+		transition: all 100ms ease-out
+
+		img
+			max-height: 100%
+
+	.sponsor-placeholder
+		position: relative
+		overflow: hidden
+		display: flex
+		margin: 0px 4px
+		padding: 8px 4px
+		justify-content: center
+		align-items: center
+		color: rgba(0,0,0,.5)
+		text-shadow: 1px 1px white, -1px -1px white
+
+		&:hover
+			color: #222
+
+		&:before,
+		&:after
+			content: ''
+			absolute: top 50% left
+			display: block
+			size: 100% 1px
+			background: rgba(0,0,0,.03)
+		&:before
+			transform: rotate(15deg)
+		&:after
+			transform: rotate(-15deg)

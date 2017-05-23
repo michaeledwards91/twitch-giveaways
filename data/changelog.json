@@ -1,0 +1,276 @@
+[
+	{
+		"version": "2.10.10",
+		"date": "Mar 21, 2017",
+		"fixed": [
+			"Past winners were added to the selected channel instead of the main channel they were rolled from."
+		]
+	},
+	{
+		"version": "2.10.0",
+		"date": "Feb 5, 2017",
+		"new": [
+			"<strong>Past winners</strong> - new section to see all of the winners you've rolled in the pased."
+		],
+		"fixed": [
+			"Fixed scrolling issue cause by Chrome bug when you try to render scrollbar at the left side :/",
+			"Fixed \"Subscribed time\" filter selecting people who might have been in the past, but are no longer subscribed now."
+		]
+	},
+	{
+		"version": "2.9.0",
+		"date": "Nov 13, 2016",
+		"new": [
+			"<strong>Active</strong> rolling type has been split into <strong>All</strong> & <strong>Active</strong>, which makes more sense and gives you more control over rolling pool."
+		],
+		"added": [
+			"<strong>Subscribed time</strong> rolling filter. You can now roll only people who have been subscribed to you for more than X months. It depends on subscriber loyality badges though, so you need to seet them up!",
+			"Proper channel subscriber badges in the user list."
+		],
+		"changed": [
+			"Quick access to some rolling relevant settings have been added to the rolling screen."
+		]
+	},
+	{
+		"version": "2.8.2",
+		"date": "Oct 17, 2016",
+		"description": [
+			"3rd release in a day! Again, be sure to unroll the changelogs below to not miss the changes."
+		],
+		"fixed": [
+			"Keyword + Min bits rolling filters were not playing well together.",
+			"Added workaround handling for Chrome rendering bug with focused range inputs."
+		]
+	},
+	{
+		"version": "2.8.1",
+		"date": "Oct 17, 2016",
+		"description": [
+			"This got released the same day as 2.8.0, so be sure to unroll the changelog below to see the new stuff that came with it."
+		],
+		"added": [
+			"Toggle whether the keyword matching should be case sensitive or not.",
+			"Support for display names with asian characters.",
+			"You can now also search for people using asian characters."
+		],
+		"fixed": [
+			"Emotification of winner messages was misbehaving."
+		]
+	},
+	{
+		"version": "2.8.0",
+		"date": "Oct 17, 2016",
+		"new": [
+			"TGA now tracks cheering."
+		],
+		"added": [
+			"Cheering rolling filter.",
+			"Cheering chat search filter. See search filters FAQ."
+		],
+		"changed": [
+			"TGA now taps into chat via TMI interface instead of parsing the DOM. This means way more reliable message events which will no longer break when Twitch changes their DOM structure. It'll only break when they change their own chat API interface, which is way less likely to happen.",
+			"Active timeout option is now a toggle."
+		],
+		"fixed": [
+			"Emoticons not displaying in winner messages.",
+			"Tons of other small code and styling fixes and tweaks."
+		]
+	},
+	{
+		"version": "2.7.0",
+		"date": "Oct 15, 2016",
+		"description": [
+			"Twitch changed something and it caused TGA to break all poped out chats. Bummer :("
+		],
+		"changed": [
+			"This update rewrites how TGA opens, where it opens, and how it connects to the chat.",
+			"TGA is now 100% isolated from Twitch so something like this will never happen again."
+		]
+	},
+	{
+		"version": "2.6.4",
+		"date": "Jul 27, 2016",
+		"fixed": [
+			"Subs not being recognized again due to another Twitch DOM change. Yeah, message tapping rewrite still not done :'("
+		]
+	},
+	{
+		"version": "2.6.3",
+		"date": "Jul 7, 2016",
+		"fixed": [
+			"Subs not being recognized again due to another Twitch DOM change. I really need to hurry up with the rewrite (will introduce better way of tapping into messages), this is getting ridiculous :)"
+		]
+	},
+	{
+		"version": "2.6.1",
+		"date": "Jul 5, 2016",
+		"fixed": [
+			"Max subscriber luck value was not being set, and defaulted to 100. Back to 10 now."
+		]
+	},
+	{
+		"version": "2.6.0",
+		"date": "Jul 4, 2016",
+		"new": [
+			"Function to announce winner in chat. You can also set up a custom announcement template!"
+		],
+		"fixed": [
+			"TGA is now compatible with BTTV. I'm also working on a small refactoring to ensure it never breaks again."
+		]
+	},
+	{
+		"version": "2.5.1",
+		"date": "Jun 30, 2016",
+		"fixed": [
+			"Chat parser not recognizing user badges again.",
+			"Long usernames stretched the width of the whole TGA window."
+		]
+	},
+	{
+		"version": "2.5.0",
+		"date": "Jun 15, 2016",
+		"new": [
+			"Implemented sponsorship. Hopefully this will at least cover time investment that went into this extension, and make me motivated to maintain and improve it further."
+		],
+		"changed": [
+			"Winner username no longer links to their profile so you can easily double-click-select and paste in chat.",
+			"You can now go to winner's profile by clicking on their avatar."
+		]
+	},
+	{
+		"version": "2.4.5",
+		"date": "Jun 14, 2016",
+		"fixed": [
+			"User badges/groups not being recognized after recent Twitch changes.",
+			"Bad TGA button styling after recent Twitch changes."
+		]
+	},
+	{
+		"version": "2.4.4",
+		"date": "Feb 15, 2015",
+		"added": [
+			"Several popular twitch bots were added to default Ignore List. If you've modified your Ignore List before, you won't see this change."
+		],
+		"changed": [
+			"New icon system. You shouldn't notice anything."
+		],
+		"fixed": [
+			"Misplaced user count."
+		]
+	},
+	{
+		"version": "2.4.3",
+		"date": "Jun 29, 2015",
+		"fixed": [
+			"Extension not working when BTTV was installed."
+		]
+	},
+	{
+		"version": "2.4.2",
+		"date": "May 30, 2015",
+		"fixed": [
+			"Extension broken by last update. The issue was only in production build and didn't show up in development, so I didn't catch it beforehand. Sorry about that."
+		]
+	},
+	{
+		"version": "2.4.1",
+		"date": "May 27, 2015",
+		"fixed": [
+			"Message parsing broken by twitch DOM markup changes.",
+			"Top bars shrinking when content becomes scrollable."
+		]
+	},
+	{
+		"version": "2.4.0",
+		"date": "Feb 23, 2015",
+		"new": [
+			"You can now use emoticons as keywords, e.g. setting a keyword to <code>Kappa</code> will work as expected."
+		],
+		"fixed": [
+			"Button not showing up sometimes."
+		]
+	},
+	{
+		"version": "2.3.2",
+		"date": "Oct 24, 2014",
+		"fixed": [
+			"Another Twitch styles shenanigans."
+		]
+	},
+	{
+		"version": "2.3.1",
+		"date": "Sep 25, 2014",
+		"fixed": [
+			"Unbroked stuff after Twitch's markup and style changes."
+		]
+	},
+	{
+		"version": "2.3.0",
+		"date": "Aug 16, 2014",
+		"new": [
+			"Implemented <strong>Subscriber luck</strong>. Read FAQ for details.",
+			"More powerful <strong>search filters</strong>. Read FAQ for details."
+		],
+		"removed": [
+			"Subscriber only checkbox is no more. It became redundant as you can accomplish the same with <code><strong>*</strong></code> search filter."
+		]
+	},
+	{
+		"version": "2.2.0",
+		"date": "Aug 4, 2014",
+		"new": [
+			"Button now also in channel pages. Clicking it pops out the chat window with Giveaways already open."
+		],
+		"changed": [
+			"Tweaking styles."
+		]
+	},
+	{
+		"version": "2.1.2",
+		"date": "Jul 26, 2014",
+		"fixed": [
+			"Some styles were getting mangled by advanced minification mode."
+		]
+	},
+	{
+		"version": "2.1.0",
+		"date": "Jul 25, 2014",
+		"new": [
+			"Keyword Antispam now has a configurable limit of entries after which the user is unchecked."
+		],
+		"changed": [
+			"Changelogs are now collapsible."
+		],
+		"fixed": [
+			"Broken links in FAQ & Changelog.",
+			"All links now open in a new window to not destroy the Giveaways session."
+		]
+	},
+	{
+		"version": "2.0.0",
+		"date": "Jul 24, 2014",
+		"description": [
+			"First of all, I'm <strong>really</strong> sorry how long it took to get this done! The rewrite got out of hand and the extension is now a small application with tons of useful features :)",
+			"I specifically focused on making it as small and as fast as possible. If you are interested in technologies used, visit the <a href=\"https://github.com/darsain/twitch-giveaways\" target=\"_blank\">extension repository</a>.",
+			"Below are some key changes that might be of interest to you:"
+		],
+		"new": [
+			"Now runs in all popped out or embedded chats, including the one in your dashboard.",
+			"Subscribers only filter.",
+			"Search bar. <em>Start query with \"<strong>!</strong>\" to search only unchecked people.</em>",
+			"Custom ignore list. See Configuration section."
+		],
+		"changed": [
+			"User list - as well as the whole app - now implements all speed optimization techniques in the universe (DOM diffing, binary search sorting, occlusion culling,...), which means the speed of rendering and scrolling is the same when there is 10 or 10,000 people. This is way more efficient than the pre-rewrite versions which had a naive implementation that took seconds to render on big channels, freezing the UI thread, and needed to be delayed. The list you see now is real time and jank-free."
+		],
+		"removed": [
+			"No longer possible to load the whole list of people in chat. They have to write something to be registered by extension."
+		]
+	}, {
+		"version": "1.5.4",
+		"date": "Mar 28, 2014",
+		"description": [
+			"Last pre-rewrite version."
+		]
+	}
+]

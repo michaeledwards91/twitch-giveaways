@@ -1,0 +1,44 @@
+@import '_variables.styl'
+
+@import 'module/resets.styl'
+@import 'module/mixins.styl'
+@import 'module/normalize.styl'
+@import 'module/animations.styl'
+@import 'module/helpers.styl'
+@import 'module/card.styl'
+@import 'module/article.styl'
+@import 'module/section.styl'
+@import 'module/form.styl'
+@import 'module/buttons.styl'
+@import 'module/option.styl'
+
+@import 'vendor/*'
+
+@import 'component/*'
+@import 'section/*'
+
+html, body
+	min-width: tga.width + 300px
+
+.page-container
+	display: flex
+	width: 100%
+	height: 100%
+	overflow: hidden
+
+	> iframe
+		position: relative
+		z-index: 3
+		flex: 1
+		background: transparent
+
+	> .chat-not-loaded
+		position: absolute
+		z-index: 2
+		top: 50%
+		left: tga.width
+		right: 0
+		transform: translateY(-50%)
+		padding: 0 2em
+		text-align: center
+		color: colors.grey

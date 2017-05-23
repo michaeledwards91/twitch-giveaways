@@ -1,0 +1,158 @@
+.section.index
+	display: flex
+	flex-flow: column
+
+	.sponsored-by
+		margin: spacing spacing 0
+
+	.controls
+		flex: 1
+		background: scrollshadows
+		overflow: auto
+		overflow-x: hidden
+
+	.block
+		margin: spacing
+
+	.rolltypes
+		display: flex
+		list-style: none
+		background: colors.dark
+
+		li
+			flex: 1
+			display: flex
+			justify-content: center
+			align-items: center
+			float: left
+			width: 50%
+			height: 3em
+			margin: 0
+			color: colors.background
+			text-align: center
+			border: 1px solid transparent
+			background: transparent
+			border-right: 1px solid rgba(#fff, .1)
+			transition: background 100ms ease-out
+			cursor: pointer
+
+			&.active
+				color: colors.dark
+				background: padding-box colors.background
+
+	.options .option
+		margin-top: 1em
+
+		&:first-child
+			margin-top: 0
+
+	.keyword
+		display: flex
+		align-items: center
+		height: 35px
+		margin-top: (spacing / 2)
+		border: 1px solid colors.lighter
+
+		.word
+			flex: 1
+			height: @height
+			padding: 0 (@height / 3)
+			background: transparent
+			border: 0
+			outline: 0
+
+		.btn
+			size: @height - 4px
+			margin-right: 1px
+			padding: 0
+			color: colors.light
+			line-height: 1
+			background: transparent
+			border: 0
+
+			&:hover
+				color: #fff !important
+				background: colors.grey
+				border-color: colors.grey !important
+
+			&.clean
+				color: colors.warning
+				&:hover
+					background: colors.warning !important
+
+			&.cancel
+				color: colors.danger
+				&:hover
+					background: colors.danger !important
+
+		&.active
+			background: colors.successLight
+			border-color: colors.success
+			&,
+			& input
+				color: colors.success
+
+	.groups
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		list-style: none
+		margin: spacing
+
+		.btn
+			justify-content: flex-start
+			flex: 1
+			margin-right: (spacing/2)
+			color: colors.grey
+			background: colors.lightest
+			border: 0
+
+			&:last-child
+				margin-right: 0
+
+			&:hover
+				color: colors.lighter
+				background: colors.grey
+
+			&.checked
+				color: colors.success
+				background: colors.successLight
+
+				&:hover
+					color: colors.successLight
+					background: colors.success
+
+			.Icon
+				margin-right: 4px
+				font-size: .8em
+
+	.actions
+		display: flex
+		margin-top: 2em
+
+		.btn
+			min-height: 3.5em
+			margin-right: (spacing / 2)
+
+			&:last-child
+				margin-right: 0
+
+			&.reset
+				border-color: colors.infoLight
+				.eligible-icon
+					display: block
+					size 20px
+					padding: 2px
+					background: colors.info content-box
+					border: 2px solid colors.info
+					border-radius: 50%
+				&:hover
+					border-color: colors.info
+					.eligible-icon
+						background-color: colors.background
+						border-color: colors.background
+
+			&.roll
+				flex: 1
+				text-transform: uppercase
+				overflow: hidden

@@ -1,0 +1,94 @@
+[
+	{
+		"question": "Where to report issues?",
+		"answer": [
+			"Ordered from the most to the least appropriate place:",
+			"<ol><li><a href=\"https://github.com/darsain/twitch-giveaways/issues\" target=\"_blank\"><svg class=\"Icon\"><use xlink:href=\"#icon-github\"/></svg> Twitch Giveaways issue tracker</a><br>If you don't have and don't want to have a Github account, choose some of the options below, but this is the most supported place to report issues.</li><li><a href=\"https://chrome.google.com/webstore/support/poohjpljfecljomfhhimjhddddlidhdd\" target=\"_blank\"><svg class=\"Icon\"><use xlink:href=\"#icon-chrome\"/></svg> Chrome Webstore issues tracker</a><br> Has no notifications. I look at it a couple of times a week.</li><li><a href=\"http://twitch.tv/message/compose?to=darsain\" target=\"_blank\"><svg class=\"Icon\"><use xlink:href=\"#icon-twitch\"/></svg> Message on Twitch</a><br> Not appropriate, but it's an option :)</li><li><a href=\"https://twitter.com/darsain\" target=\"_blank\"><svg class=\"Icon\"><use xlink:href=\"#icon-twitter\"/></svg> Tweet @darsain</a><br> The worst. Not enough place to describe anything, and not guaranteed I'll read it.</li></ol>"
+		]
+	},
+	{
+		"question": "Who exactly am I rolling from?",
+		"answer": [
+			"You are always rolling from the list of people on the left, with the exception of those that are unchecked (i.e. ineligible to win).",
+			"If you have a search active, you are rolling only from the search results.",
+			"<em>Search is always real time and doesn't need to be updated by re-searching.</em>"
+		]
+	},
+	{
+		"question": "Subscribed time",
+		"answer": [
+			"Rolling filter to select only people that have been subscribed for more than 1, 3, 6, 12, or 24 months.",
+			"This filter depends on <strong>Subscriber loyality badges</strong>, so don't forget to set them up!",
+			"Without loyality badges, you can select <code>1 month</code> as a subscribers only filter."
+		]
+	},
+	{
+		"question": "Subscriber luck, how does it work?",
+		"answer": [
+			"Subscriber luck specifies how many times are subscribers likely to win as opposed to regular users.",
+			"For example, Subscriber luck 3 is the same as if every subscriber was in the list 3 times."
+		]
+	},
+	{
+		"question": "Search filters?",
+		"answer": [
+			"Special characters that, when entered as a first letter of a search query, apply a special filter to results.",
+			"Available search filters are:",
+			"<strong><code>!</code></strong> - Only ineligible users.",
+			"<strong><code>*</code></strong> - Only subscribers.",
+			"<strong><code>^</code></strong> - Only people who cheered.",
+			"For example, searching for <code><strong>*</strong></code> will find all subscribers, and searching for <code><strong>*</strong>foo</code> will find subscribers with name containing <em>foo<em>.",
+			"<em>Search is always real time and doesn't need to be updated by re-searching.</em>"
+		]
+	},
+	{
+		"question": "When are people unchecked?",
+		"answer": [
+			"People are unchecked (made not eligible to win) when:",
+			"<ul><li>You manually click on them in the list.</li><li>They spam keyword and <strong>Keyword antispam</strong> is enabled.</li><li>They've already won once and <strong>Uncheck winners</strong> is enabled.</li></ul>"
+		]
+	},
+	{
+		"question": "Past winners",
+		"answer": [
+			"List of all the people you've rolled in the past. The list is persistent (stays between page reloads), but attached to the current browser, so it won't migrate to other machines.",
+			"You have 5 MB of storage available, so be sure to keep an eye on the used data statistic (bottom of the list), and clear the oldest records when it start approaching the limit.",
+			"5 MB gives you space for 20.000+ records.",
+			"You can clear the oldest records by selecting the date cutoff as a \"To\" time filter, and clicking on the \"Clear selected\" button at the bottom."
+		]
+	},
+	{
+		"question": "Followers only filter?",
+		"answer": [
+			"Unfortunately, there is no way how to get the following status of each user without getting you banned from api.twitch.tv for making too many requests :(",
+			"If there was, it would already be in. Until that changes somehow (unlikely) you have to roll someone to see whether they are following you."
+		]
+	},
+	{
+		"question": "Why won't you load all people in chat without them having to talk?",
+		"answer": [
+			"Since the last chat update, there is no reasonable way how to retrieve the list of people in chat along with their group and subscriber status.",
+			"Besides, not many people were using this anyway, as rolling AFK lurkers is not fun :)"
+		]
+	},
+	{
+		"question": "Who is \"jtv\" and why is he in the Ignore list?",
+		"answer": [
+			"Jtv is a username of a Twitch bot that says \"<em>Welcome to the chat room!</em>\" among other things."
+		]
+	},
+	{
+		"question": "Why won't I appear in the list when I write something?",
+		"answer": [
+			"Everyone with Broadcaster badge (owner of the current channel) is ignored by default."
+		]
+	},
+	{
+		"question": "It isn't random! Always rolls the same people!",
+		"answer": [
+			"No, the rolling <strong>is</strong> random. The only time rolling prefers some people more than others is when you increase Subscriber luck, which is explained above.",
+			"If you <em>\"feel\"</em> that it isn't random, I urge you to test it! Get 10 people in the list, and roll a couple hundred times while writing down the win distribution.",
+			"If you still don't believe me, you can always open the <a href=\"https://github.com/darsain/twitch-giveaways\" target=\"_blank\">repository</a> and check the code. Rolling is located in the <code>src/js/component/tga.js</code> file as <code>this.roll()</code> function."
+		]
+	}
+]

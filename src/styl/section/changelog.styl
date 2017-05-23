@@ -1,0 +1,22 @@
+.section.changelog
+	padding: 0 spacing
+
+	.version
+		display: flex
+		align-items: center
+		margin: -(spacing/2) 0
+		cursor: pointer
+
+		.chevron
+			align-self: center
+			color: colors.light
+
+		&:hover .chevron
+			color: colors.dark
+
+	.description
+		display: block
+		margin-top: spacing
+
+	ul li
+		list-style-type: disc

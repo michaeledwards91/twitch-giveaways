@@ -1,0 +1,20 @@
+{
+	"lastReadChangelog": "0.0.0",
+	"uncheckWinners": true,
+	"announceWinner": true,
+	"announceTemplate": "the winner is @{name}!",
+	"keywordAntispam": false,
+	"keywordAntispamLimit": 1,
+	"displayTooltips": true,
+	"ignoreList": [
+		"jtv",
+		"nightbot",
+		"moobot",
+		"vivbot",
+		"wizebot",
+		"coebot",
+		"mikuia",
+		"rifflebot",
+		"revlobot"
+	]
+}

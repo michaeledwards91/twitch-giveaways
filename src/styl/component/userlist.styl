@@ -1,0 +1,81 @@
+.userlist
+	flex: 1
+	overflow: auto
+	background: scrollshadows
+
+	.user
+		display: flex
+		align-items: center
+		margin: 0
+		padding: 0 4px 0 0
+		height: 30px
+		text-align: left
+		color: colors.light
+		cursor: pointer
+		transition: color 100ms linear
+
+		&:hover
+			background: rgba(colors.lighter, .5)
+
+	.eligible
+		display: flex
+		align-items: center
+		justify-content: center
+		size: 10px
+		margin: 0 5px 0 8px
+
+		&:after
+			display: block
+			size: 6px
+			content: ''
+			padding: 1px
+			background-color: transparent
+			background-clip: content-box
+			border: 1px solid colors.light
+			border-radius: 50%
+			transition: all 100ms linear
+
+	.name
+		flex: 1
+		overflow: ellipsis
+
+	.query
+		color: colors.info
+		border-bottom: 1px solid colors.infoLight
+
+	.badge
+		display: block
+		size: 18px
+		transition: color 100ms linear
+		margin-left: 2px
+
+		&.staff
+			font-size: 1.2em
+
+	.subscriber.-placeholder
+		position: relative
+		size: 22px
+
+		.Icon
+			display: block
+			size: @width
+
+		.time
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			top: 0
+			left: 0
+			size: @width
+			font-size: 60%
+			color: #fff
+			text-shadow: -1px -1px 0 rgba(#000, .2)
+
+	.checked
+		color: colors.dark
+
+		.eligible:after
+			size: 10px
+			background-color: colors.success
+			border-color: colors.success

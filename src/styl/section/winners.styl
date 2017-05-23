@@ -1,0 +1,198 @@
+.section.winners
+	leftSpacing = 8px
+	display: flex
+	flex-direction: column
+
+	> .controls
+		display: flex
+		margin-top: 4px
+		height: 45px
+		border-bottom: 1px solid colors.lighter - 20
+
+		> select
+			size: 130px @height
+			font-family: monospace
+			border: 0
+
+		> input.term
+			flex: 1 1 0
+			size: 0 @height
+			padding: 0 leftSpacing
+			font-family: monospace
+			font-size: 1.1em
+			border: 0
+
+		> .time
+			width: 130px
+
+			.from,
+			.to
+				display: flex
+				align-items: center
+
+			.to
+				margin-top: -2px
+
+			span
+				display: inline-block
+				width: 36px
+				padding: 0 4px
+				text-align: right
+				font-size: .85em
+
+			input.date
+				flex: 1
+				size: 80px 22px
+				font-size: .85em
+				padding: 1px 4px 0
+				font-family: monospace
+				border: 0
+
+				&::-webkit-inner-spin-button
+					display: none
+				&::-webkit-clear-button,
+				&::-webkit-calendar-picker-indicator
+					size: 10px
+
+	> .stats
+		display: flex
+		align-items: center
+		height: 60px
+		padding-bottom: 4px
+		border-top: 1px solid colors.lighter - 20
+
+		.stat
+			display: flex
+			flex-flow: column
+			margin-left: leftSpacing
+			line-height: 1
+			font-size: .9em
+
+			& + .stat
+				margin-left: leftSpacing * 2
+
+			> .value
+				order: 0
+				font-weight: bold
+			> .title
+				order: 1
+				font-family: monospace
+				opacity: .6
+
+		.spacer
+			flex: 1
+
+		button
+			display: flex
+			align-items: center
+			height: 40px
+			padding: 0 leftSpacing
+			margin-right: leftSpacing
+			background: transparent
+			white-space: nowrap
+			border: 0
+			font-size: .85em
+			font-family: monospace
+			opacity: .5
+			cursor: pointer
+
+			&:hover
+				opacity: 1
+
+			> .Icon
+				margin-right: 4px
+
+	> .winners
+		flex: 1
+		overflow-x: hidden
+		overflow-y: scroll
+		background: scrollshadows
+
+		> .empty
+			padding: 2em 4em
+			color: colors.light
+			font-style: italic
+			text-align: center
+
+		> .record
+			recordHeight = 50px
+			deleteWidth = 40px
+			position: relative
+			z-index: 1
+			height: recordHeight
+			border-bottom: 1px solid colors.lighter
+			// animation-duration: 100ms
+
+			.query
+				color: colors.info
+				border-bottom: 1px solid colors.infoLight
+
+			> header
+				padding: 0 deleteWidth 0 leftSpacing
+				height: 24px
+				display: flex
+				align-items: flex-end
+
+				> .name
+					flex: 1
+					font-weight: bold
+					color: colors.dark
+					overflow: ellipsis
+
+				> .profile,
+				> .message,
+				> .time
+					margin-left: 10px
+					font-size: 0.8em
+
+				> a
+					color: colors.light
+					&:hover
+						color: colors.twitch
+
+				> .time
+					width: 85px
+					font-size: .85em
+					font-style: italic
+					white-space: nowrap
+					flex-shrink: 0
+
+			> .title
+				height: 1.6em
+				padding: 1px deleteWidth leftSpacing - 1 leftSpacing
+				color: colors.background - 100
+				font-size: .9em
+				overflow: hidden
+
+			&:hover
+				z-index: 2
+				background: colors.background - 8
+				box-shadow: 0 -1px 0 colors.background - 20
+
+				> .title
+					height: auto
+					border-bottom: 1px solid @background - 20
+					pointer-events: none
+					background: @background
+
+			> .delete
+				absolute: top right
+				size: deleteWidth recordHeight
+				font-size: .84em
+				background: transparent
+				border: 0
+				opacity: .2
+				cursor: pointer
+
+				&:hover
+					color: colors.danger
+					opacity: 1
+
+@keyframes Record-in
+	from
+		transform: translateX(100px)
+		opacity: 0
+
+	to
+		transform: translateX(0px)
+		opacity: 1

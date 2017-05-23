@@ -1,0 +1,26 @@
+.support
+	display: flex
+
+	.divider
+		font-size: .8em
+
+	a
+		flex: 1
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 50px
+		margin: 0
+		font-size: 18px
+		text-decoration: none
+		transition: all 100ms ease-out
+
+	.paypal
+		color: colors.paypalLight
+		&:hover
+			color: colors.paypalDark
+
+	.bitcoin
+		color: lighten(colors.bitcoin, 20)
+		&:hover
+			color: colors.bitcoin

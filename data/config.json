@@ -1,0 +1,32 @@
+{
+	"storageName": "twitchGiveaways",
+	"sponsorshipEmail": "sponsorship@darsa.in",
+	"minWindowWidth": 800,
+	"maxSubscriberLuck": 10,
+	"maxActiveTimeout": 14400000,
+	"subscribedTimeSteps": [0, 1, 3, 6, 12, 24],
+	"cheerSteps": [0, 1, 100, 1000, 5000, 10000, 100000],
+	"tooltips": {
+		"tooltip": {
+			"baseClass": "tgatip",
+			"auto": 1,
+			"effectClass": "slide"
+		},
+		"key": "tip",
+		"observe": true
+	},
+	"searchFilters": {
+		"!": {
+			"prop": "eligible",
+			"value": false
+		},
+		"*": {
+			"prop": "subscriber",
+			"value": true
+		},
+		"^": {
+			"prop": "bits",
+			"value": "truthy"
+		}
+	}
+}
