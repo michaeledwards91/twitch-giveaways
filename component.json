@@ -27,7 +27,6 @@
     "aheckmann/sliced": "0.0.5",
     "jkroso/computed-style": "0.1.0",
     "component/type": "1.0.0",
-    "lhorie/mithril": "v0.1.34",
     "eivindfjeldstad/dot": "0.1.0",
     "component/escape-regexp": "1.0.2"
   }
